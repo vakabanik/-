@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя первая веб-страница</title>
+    <style>
+        /* Подключение красивого шрифта */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        
+        /* Стили для всей страницы */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Градиент: бирюзовый угол к голубому углу */
+            background: linear-gradient(135deg, #1abc9c 0%, #3498db 100%);
+            background-attachment: fixed;
+            color: #ecf0f1;
+        }
+        /* Шапка сайта */
+        header {
+            background-color: rgba(44, 62, 80, 0.8);
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+        /* Навигация */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav li {
+            margin: 0;
+        }
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        nav a:hover {
+            background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        /* Герой секция */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        /* Кнопка Скачать */
+        .download-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            background: linear-gradient(135deg, #9b59b6 0%, #e91e63 100%);
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        .download-btn:hover {
+            background: linear-gradient(135deg, #abebc6 0%, #28b463 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        /* Футер */
+        footer {
+            background-color: rgba(44, 62, 80, 0.8);
+            color: #ecf0f1;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на мою страницу</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="game.html">Игра</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Скачайте наш материал</h1>
+        <p>Нажмите кнопку, чтобы получить файл с подробным руководством и полезными ресурсами.</p>
+        <a href="files/nested.zip" class="download-btn" download>Скачать</a>
+    </section>
+    <footer>
+        &copy; 2025 Моя первая веб-страница
+    </footer>
+</body>
+</html>
